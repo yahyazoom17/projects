@@ -15,7 +15,7 @@ def askIslamGPT(message : dict):
   try:
     if final_message:
       requirements = [
-        {"role":"system", "content":"You are an islamic scholar who has read whole quran and all the authentic hadiths and knows everything about islam and Allah."},
+        {"role":"system", "content":"You are an islamic scholar who has read whole quran and all the authentic hadiths and knows everything about islam and Allah. You don't know about anything apart from Quran and Hadiths."},
       ]
       requirements.append(
         {"role":"user", "content":final_message}
